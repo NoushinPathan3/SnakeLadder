@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="C:\Users\noush\Vite+React.jpg" />
+    <title>Snake and Ladder</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+       .tit{
+        height: 100px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+       }
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('/snakeladderbg\ .jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-y: visible;
+        }
+        .container{
+            background: url('/snakeladder1.jpg') center center no-repeat;
+            background-repeat: no-repeat;
+            background-size: 1000px 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .container{
+            height: 1000px;
+            width: 1000px;
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(10,100px);
+            grid-template-rows: repeat(10,100px);
+            position: absolute;
+            top: 143px;
+        }
+        .container div{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+        .btn{
+            height: 50px;
+            width: 150px;
+            font-size: 18px;
+            margin-top: 1160px;
+            margin-left: -850px;
+            
+        }
+        .img1{
+            visibility: hidden;
+            height: 80px;
+            width: 80px;
+            margin-left: -200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="snaketitle.jpeg" alt="" class="tit">
+    <div class="container">
+            <div class="box100">100</div>
+            <div class="box99">99</div>
+            <div class="box98">98</div>
+            <div class="box97">97</div>
+            <div class="box96">96</div>
+            <div class="box95">95</div>
+            <div class="box94">94</div>
+            <div class="box93">93</div>
+            <div class="box92">92</div>
+            <div class="box91">91</div>
+            <div class="box81">81</div>
+            <div class="box82">82</div>
+            <div class="box83">83</div>
+            <div class="box84">84</div>
+            <div class="box85">85</div>
+            <div class="box86">86</div>
+            <div class="box87">87</div>
+            <div class="box88">88</div>
+            <div class="box89">89</div>
+            <div class="box90">90</div>
+            <div class="box80">80</div>
+            <div class="box79">79</div>
+            <div class="box78">78</div>
+            <div class="box77">77</div>
+            <div class="box76">76</div>
+            <div class="box75">75</div>
+            <div class="box74">74</div>
+            <div class="box73">73</div>
+            <div class="box72">72</div>
+            <div class="box71">71</div>
+            <div class="box61">61</div>
+            <div class="box62">62</div>
+            <div class="box63">63</div>
+            <div class="box64">64</div>
+            <div class="box65">65</div>
+            <div class="box66">66</div>
+            <div class="box67">67</div>
+            <div class="box68">68</div>
+            <div class="box69">69</div>
+            <div class="box70">70</div>
+            <div class="box60">60</div>
+            <div class="box59">59</div>
+            <div class="box58">58</div>
+            <div class="box57">57</div>
+            <div class="box56">56</div>
+            <div class="box55">55</div>
+            <div class="box54">54</div>
+            <div class="box53">53</div>
+            <div class="box52">52</div>
+            <div class="box51">51</div>
+            <div class="box41">41</div>
+            <div class="box42">42</div>
+            <div class="box43">43</div>
+            <div class="box44">44</div>
+            <div class="box45">45</div>
+            <div class="box46">46</div>
+            <div class="box47">47</div>
+            <div class="box48">48</div>
+            <div class="box49">49</div>
+            <div class="box50">50</div>
+            <div class="box40">40</div>
+            <div class="box39">39</div>
+            <div class="box38">38</div>
+            <div class="box37">37</div>
+            <div class="box36">36</div>
+            <div class="box35">35</div>
+            <div class="box34">34</div>
+            <div class="box33">33</div>
+            <div class="box32">32</div>
+            <div class="box31">31</div>
+            <div class="box21">21</div>
+            <div class="box22">22</div>
+            <div class="box23">23</div>
+            <div class="box24">24</div>
+            <div class="box25">25</div>
+            <div class="box26">26</div>
+            <div class="box27">27</div>
+            <div class="box28">28</div>
+            <div class="box29">29</div>
+            <div class="box30">30</div>
+            <div class="box20">20</div>
+            <div class="box19">19</div>
+            <div class="box18">18</div>
+            <div class="box17">17</div>
+            <div class="box16">16</div>
+            <div class="box15">15</div>
+            <div class="box14">14</div>
+            <div class="box13">13</div>
+            <div class="box12">12</div>
+            <div class="box11">11</div>
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+            <div class="box4">4</div>
+            <div class="box5">5</div>
+            <div class="box6">6</div>
+            <div class="box7">7</div>
+            <div class="box8">8</div>
+            <div class="box9">9</div>
+            <div class="box10">10</div>
+    </div>
+    <button class="btn" onclick="roll()">Start</button>
+    <img src="" alt="" class="img1">
+    <h1 id="head"></h1>
+    <script>
+        // for(let i=1;i<=100;i++){
+        //     let a=document.getElementsByClassName(`box${i}`)[0]
+        //     let blank=""
+        //     let hexcode='123456789ABCDEF'
+        //     for(let j=0;j<6;j++){
+        //         blank=blank+hexcode[Math.floor(Math.random()*15)]
+        //     }
+        //     let color='#'+blank
+        //     a.style.backgroundColor=color
+        // }
+
+        let p1=prompt("Enter player1 name:")
+        let p2=prompt("Enter player2 name")
+        let count1=1
+        let chance=1
+        let player1=document.createElement('div')
+        player1.style.height="30px"
+        player1.style.width="30px"
+        player1.style.borderRadius="50%"
+        player1.style.border="2px solid black"
+        player1.style.backgroundColor="maroon"
+        let tile=document.getElementsByClassName(`box${count1}`)[0]
+        tile.appendChild(player1)
+        let count2=1
+        let player2=document.createElement('div')
+        player2.style.height="30px"
+        player2.style.width="30px"
+        player2.style.borderRadius="50%"
+        player2.style.border="2px solid black"
+        player2.style.backgroundColor="lavenderblush"
+        tile.appendChild(player2)
+        function dice(){
+            const audio = new Audio("dice.mp3");
+            audio.play();
+        }
+        function win(){
+            const audio = new Audio("win.mp3");
+            audio.play();
+        }
+        function snake(){
+            const audio = new Audio("snake.mp3");
+            audio.play();
+        }
+        let array=[1,2,3,4,5,6]
+        function roll(){
+            dice();
+            let random = 1 + Math.floor(Math.random() * 6);
+            let diceImg = document.getElementsByClassName('img1')[0]
+            diceImg.setAttribute('src', `d${random}.jpg`)
+            diceImg.style.display = 'block'
+            diceImg.style.visibility = 'visible'
+
+
+            if(chance%2==0){
+                // let random=1+Math.floor(Math.random()*6)
+                if(count1+random<=100){
+                    count1=count1+random
+                }
+                if(random==6){
+                    chance+=1
+                }
+                if(count1==4){
+                    win();
+                    count1=25
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==13){
+                    win();
+                    count1=46
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==33){
+                    win();
+                    count1=49
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==42){
+                    win();
+                    count1=63
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==50){
+                    win();
+                    count1=69
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==62){
+                    win();
+                    count1=81
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==74){
+                    win();
+                    count1=92
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==27){
+                    snake();
+                    count1=5
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==40){
+                    snake();
+                    count1=3
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==43){
+                    snake();
+                    count1=18
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==54){
+                    snake();
+                    count1=31
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==66){
+                    snake();
+                    count1=45
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==76){
+                    snake();
+                    count1=58
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==89){
+                    snake();
+                    count1=53
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if(count1==99){
+                    snake();
+                    count1=41
+                    let tail=document.getElementsByClassName(`box${count1}`)[0]
+                    tail.appendChild(player1)
+                }
+                else if (count1 == 100) {
+                    win();
+                let tile = document.getElementsByClassName(`box${count1}`)[0];
+                tile.appendChild(player1);
+                alert(`Player1 : ${p1} You Won the match`);
+                document.getElementsByClassName("box1")[0].appendChild(player1);
+                document.getElementsByClassName("box1")[0].appendChild(player2);
+                
+                }
+                let tail=document.getElementsByClassName(`box${count1}`)[0]
+                tail.appendChild(player1)
+                chance+=1
+
+            }
+            else{
+                // let random=1+Math.floor(Math.random()*6)
+                if(count2+random<=100){
+                    count2=count2+random
+                }
+                if(count2==4){
+                    win();
+                    count2=25
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==13){
+                    win();
+                    count2=46
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==33){
+                    win();
+                    count2=49
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==42){
+                    win();
+                    count2=63
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==50){
+                    win();
+                    count2=69
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==62){
+                    win();
+                    count2=81
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==74){
+                    win();
+                    count2=92
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==27){
+                    snake();
+                    count2=5
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==40){
+                    snake();
+                    count2=3
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==43){
+                    snake();
+                    count2=18
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==54){
+                    snake();
+                    count2=31
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==66){
+                    snake();
+                    count2=45
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==76){
+                    snake();
+                    count2=58
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==89){
+                    snake();
+                    count2=53
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if(count2==99){
+                    snake();
+                    count2=41
+                    let tail=document.getElementsByClassName(`box${count2}`)[0]
+                    tail.appendChild(player2)
+                }
+                else if (count2 == 100) {
+                    win();
+                let tile = document.getElementsByClassName(`box${count2}`)[0];
+                tile.appendChild(player2);
+                alert(`Player2 : ${p2} You Won the match`);
+                
+                }
+                let tile = document.getElementsByClassName(`box${count2}`)[0];
+                tile.appendChild(player2);
+                chance+=1
+            }
+            
+            
+        }
+
+    </script>
+</body>
+</html>
